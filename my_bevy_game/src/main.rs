@@ -8,15 +8,14 @@ fn main() {
         // Add default Bevy plugins
         .add_plugins(DefaultPlugins)
         // Window setup
-        .insert_resource(ClearColor(Color::srgb(0.1, 0.1, 0.1))) // Dark background
+        .insert_resource(ClearColor(Color::srgb(0.1, 0.1, 0.3))) // Dark blue skybox
         // Setup system (runs once at startup)
         .add_systems(Startup, systems::setup)
         // Game systems that run every frame
         .add_systems(Update, (
             systems::handle_input,
             systems::movement,
-            // Uncomment when you want the camera to follow the player
-            // systems::camera_follow,
+            systems::camera_follow, // Camera follow system is now enabled
         ))
         .run();
 }
