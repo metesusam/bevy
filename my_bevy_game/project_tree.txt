@@ -1730,8 +1730,26 @@ Proje Ağacı: C:\Users\Mete\bevy\my_bevy_game
     │   └── profiling.md
     ├── examples
     │   └── game_breakout.rs
+    ├── llm_helper_files
+    │   ├── apps.json
+    │   ├── assets.json
+    │   ├── b0001.json
+    │   ├── b0002.json
+    │   ├── b0003.json
+    │   ├── b0004.json
+    │   ├── b0005.json
+    │   ├── b0006.json
+    │   ├── ecs.json
+    │   ├── getting-started.json
+    │   ├── getting-started_1.json
+    │   ├── introduction.json
+    │   ├── plugins.json
+    │   ├── plugins_1.json
+    │   ├── resources.json
+    │   └── setup.json
     ├── src
     │   └── main.rs
+    ├── .cursorrules
     ├── best_practices.md
     ├── Cargo.toml
     ├── project_tree.txt

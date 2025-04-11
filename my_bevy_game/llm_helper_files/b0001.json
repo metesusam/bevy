@@ -1,0 +1,11 @@
+{
+  "title": "Bevy Errors: B0001",
+  "url": "https://bevyengine.org/learn/errors/b0001/",
+  "sections": [
+    {
+      "level": 1,
+      "title": "B0001",
+      "content": "To keep Rust rules on references (either one mutable reference or any number of immutable references) on a component, it is not possible to have two queries on the same component when one requests mutable access to it in the same system.Erroneous code example:use bevy::prelude::*;\n\n#[derive(Component)]\nstruct Player;\n\n#[derive(Component)]\nstruct Enemy;\n\nfn move_enemies_to_player(\n    mut enemies: Query<&mut Transform, With<Enemy>>,\n    player: Query<&Transform, With<Player>>,\n) {\n    // ...\n}\n\nfn main() {\n    App::new()\n        .add_plugins(DefaultPlugins)\n        .add_systems(Update, move_enemies_to_player)\n        .run();\n}\nThis will panic, as it's not possible to have both a mutable and an immutable query on Transform at the same time.You have two solutions:Solution #1: use disjoint queries using WithoutAs a Player entity won't be an Enemy at the same time, those two queries will actually never target the same entity. This can be encoded in the query filter with Without:use bevy::prelude::*;\n\n#[derive(Component)]\nstruct Player;\n\n#[derive(Component)]\nstruct Enemy;\n\nfn move_enemies_to_player(\n    mut enemies: Query<&mut Transform, With<Enemy>>,\n    player: Query<&Transform, (With<Player>, Without<Enemy>)>,\n) {\n    // ...\n}\n\nfn main() {\n    App::new()\n        .add_plugins(DefaultPlugins)\n        .add_systems(Update, move_enemies_to_player)\n        .run();\n}\nSolution #2: use a ParamSetA ParamSet will let you have conflicting queries as a parameter, but you will still be responsible for not using them at the same time in your system.use bevy::prelude::*;\n\n#[derive(Component)]\nstruct Player;\n\n#[derive(Component)]\nstruct Enemy;\n\nfn move_enemies_to_player(\n    mut transforms: ParamSet<(\n        Query<&mut Transform, With<Enemy>>,\n        Query<&Transform, With<Player>>,\n    )>,\n) {\n    // ...\n}\n\nfn main() {\n    App::new()\n        .add_plugins(DefaultPlugins)\n        .add_systems(Update, move_enemies_to_player)\n        .run();\n}\nNext B0002   Previous Introduction    Improve this page"
+    }
+  ]
+}

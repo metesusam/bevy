@@ -1,0 +1,26 @@
+{
+  "title": "Getting Started",
+  "url": "https://bevyengine.org/learn/quick-start/getting-started/#try-the-examples",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Getting Started",
+      "content": "This section will help you get started on your Bevy journey as quickly as possible. It will walk you through setting up your development environment and writing a simple Bevy app.Quick Start #If you want to dive in immediately and you already have a working Rust setup, feel free to follow this \"quick start\" guide. Otherwise, move on to the next page.Depending on your platform, you may have to install additional dependencies. You can also speed up compile times by following the \"fast compiles\" section.Try the Examples #Clone the Bevy repo: git clone https://github.com/bevyengine/bevy\nNavigate to the new \"bevy\" folder cd bevy\nSwitch to the correct Bevy version (as the default is the git main development branch) # use the latest Bevy release\ngit checkout latest\n# or a specific version\ngit checkout v0.15.0\nTry the examples in the examples folder cargo run --example breakout\nAdd Bevy as a Dependency #Bevy is available as a library on crates.io.The easiest way to add it to your project is to use cargo add:cargo add bevy\nAlternatively, you can manually add it to your project's Cargo.toml like this:[dependencies]\nbevy = \"0.15\" # make sure this is the latest version\nMake sure to use the latest bevy crate version ().\nNext Setup   Previous Introduction    Improve this page"
+    },
+    {
+      "level": 2,
+      "title": "Quick Start #",
+      "content": "If you want to dive in immediately and you already have a working Rust setup, feel free to follow this \"quick start\" guide. Otherwise, move on to the next page.Depending on your platform, you may have to install additional dependencies. You can also speed up compile times by following the \"fast compiles\" section.Try the Examples #Clone the Bevy repo: git clone https://github.com/bevyengine/bevy\nNavigate to the new \"bevy\" folder cd bevy\nSwitch to the correct Bevy version (as the default is the git main development branch) # use the latest Bevy release\ngit checkout latest\n# or a specific version\ngit checkout v0.15.0\nTry the examples in the examples folder cargo run --example breakout\nAdd Bevy as a Dependency #Bevy is available as a library on crates.io.The easiest way to add it to your project is to use cargo add:cargo add bevy\nAlternatively, you can manually add it to your project's Cargo.toml like this:[dependencies]\nbevy = \"0.15\" # make sure this is the latest version\nMake sure to use the latest bevy crate version ()."
+    },
+    {
+      "level": 3,
+      "title": "Try the Examples #",
+      "content": "Clone the Bevy repo: git clone https://github.com/bevyengine/bevy\nNavigate to the new \"bevy\" folder cd bevy\nSwitch to the correct Bevy version (as the default is the git main development branch) # use the latest Bevy release\ngit checkout latest\n# or a specific version\ngit checkout v0.15.0\nTry the examples in the examples folder cargo run --example breakout"
+    },
+    {
+      "level": 3,
+      "title": "Add Bevy as a Dependency #",
+      "content": "Bevy is available as a library on crates.io.The easiest way to add it to your project is to use cargo add:cargo add bevy\nAlternatively, you can manually add it to your project's Cargo.toml like this:[dependencies]\nbevy = \"0.15\" # make sure this is the latest version\nMake sure to use the latest bevy crate version ()."
+    }
+  ]
+}
