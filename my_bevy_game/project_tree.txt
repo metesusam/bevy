@@ -1,0 +1,1738 @@
+Proje Ağacı: C:\Users\Mete\bevy\my_bevy_game
+========================================
+└── .
+    ├── assets
+    │   ├── android-res
+    │   │   └── mipmap-mdpi
+    │   │       └── ic_launcher.png
+    │   ├── animation_graphs
+    │   │   └── Fox.animgraph.ron
+    │   ├── branding
+    │   │   ├── banner.png
+    │   │   ├── bevy_bird_dark.png
+    │   │   ├── bevy_bird_dark.svg
+    │   │   ├── bevy_bird_simpleicons.svg
+    │   │   ├── bevy_logo_dark.png
+    │   │   ├── bevy_logo_dark.svg
+    │   │   ├── bevy_logo_dark_big.png
+    │   │   ├── bevy_logo_light.png
+    │   │   ├── bevy_logo_light.svg
+    │   │   ├── bevy_logo_light_dark_and_dimmed.svg
+    │   │   ├── icon.png
+    │   │   └── icon.svg
+    │   ├── data
+    │   │   ├── asset.custom
+    │   │   ├── asset_no_extension
+    │   │   └── compressed_image.png.gz
+    │   ├── docs
+    │   │   └── Mesh.png
+    │   ├── environment_maps
+    │   │   ├── cubes_reflection_probe_specular_rgb9e5_zstd.ktx2
+    │   │   ├── info.txt
+    │   │   ├── pisa_diffuse_rgb9e5_zstd.ktx2
+    │   │   ├── pisa_specular_rgb9e5_zstd.ktx2
+    │   │   └── sky_skybox.ktx2
+    │   ├── fonts
+    │   │   ├── FiraMono-LICENSE
+    │   │   ├── FiraMono-Medium.ttf
+    │   │   └── FiraSans-Bold.ttf
+    │   ├── irradiance_volumes
+    │   │   └── Example.vxgi.ktx2
+    │   ├── lightmaps
+    │   │   ├── CornellBox-Box.zstd.ktx2
+    │   │   ├── CornellBox-Large.zstd.ktx2
+    │   │   └── CornellBox-Small.zstd.ktx2
+    │   ├── models
+    │   │   ├── AlienCake
+    │   │   │   ├── alien.glb
+    │   │   │   ├── cakeBirthday.glb
+    │   │   │   └── tile.glb
+    │   │   ├── animated
+    │   │   │   ├── Fox.glb
+    │   │   │   └── MorphStressTest.gltf
+    │   │   ├── AnisotropyBarnLamp
+    │   │   │   ├── AnisotropyBarnLamp.bin
+    │   │   │   ├── AnisotropyBarnLamp.gltf
+    │   │   │   ├── AnisotropyBarnLamp_anisotropy.ktx2
+    │   │   │   ├── AnisotropyBarnLamp_basecolor.jpeg
+    │   │   │   ├── AnisotropyBarnLamp_normalbump.ktx2
+    │   │   │   └── AnisotropyBarnLamp_occlusionroughnessmetal.ktx2
+    │   │   ├── barycentric
+    │   │   │   └── barycentric.gltf
+    │   │   ├── CornellBox
+    │   │   │   └── CornellBox.glb
+    │   │   ├── cube
+    │   │   │   ├── cube.bin
+    │   │   │   └── cube.gltf
+    │   │   ├── cubes
+    │   │   │   └── Cubes.glb
+    │   │   ├── DepthOfFieldExample
+    │   │   │   ├── CircuitBoardLightmap.hdr
+    │   │   │   └── DepthOfFieldExample.glb
+    │   │   ├── extras
+    │   │   │   └── gltf_extras.glb
+    │   │   ├── FlightHelmet
+    │   │   │   ├── FlightHelmet.bin
+    │   │   │   ├── FlightHelmet.gltf
+    │   │   │   ├── FlightHelmet_Materials_GlassPlasticMat_BaseColor.png
+    │   │   │   ├── FlightHelmet_Materials_GlassPlasticMat_Normal.png
+    │   │   │   ├── FlightHelmet_Materials_GlassPlasticMat_OcclusionRoughMetal.png
+    │   │   │   ├── FlightHelmet_Materials_LeatherPartsMat_BaseColor.png
+    │   │   │   ├── FlightHelmet_Materials_LeatherPartsMat_Normal.png
+    │   │   │   ├── FlightHelmet_Materials_LeatherPartsMat_OcclusionRoughMetal.png
+    │   │   │   ├── FlightHelmet_Materials_LensesMat_BaseColor.png
+    │   │   │   ├── FlightHelmet_Materials_LensesMat_Normal.png
+    │   │   │   ├── FlightHelmet_Materials_LensesMat_OcclusionRoughMetal.png
+    │   │   │   ├── FlightHelmet_Materials_MetalPartsMat_BaseColor.png
+    │   │   │   ├── FlightHelmet_Materials_MetalPartsMat_Normal.png
+    │   │   │   ├── FlightHelmet_Materials_MetalPartsMat_OcclusionRoughMetal.png
+    │   │   │   ├── FlightHelmet_Materials_RubberWoodMat_BaseColor.png
+    │   │   │   ├── FlightHelmet_Materials_RubberWoodMat_Normal.png
+    │   │   │   └── FlightHelmet_Materials_RubberWoodMat_OcclusionRoughMetal.png
+    │   │   ├── FlightHelmetLowPoly
+    │   │   │   ├── FlightHelmetLowPoly.bin
+    │   │   │   └── FlightHelmetLowPoly.gltf
+    │   │   ├── GltfPrimitives
+    │   │   │   └── gltf_primitives.glb
+    │   │   ├── GolfBall
+    │   │   │   └── GolfBall.glb
+    │   │   ├── IrradianceVolumeExample
+    │   │   │   └── IrradianceVolumeExample.glb
+    │   │   ├── PalmTree
+    │   │   │   ├── PalmTree.bin
+    │   │   │   ├── PalmTree.gltf
+    │   │   │   └── StylizedWater.png
+    │   │   ├── ship
+    │   │   │   ├── craft_speederD.gltf
+    │   │   │   └── craft_speederD_data.bin
+    │   │   ├── SimpleSkin
+    │   │   │   └── SimpleSkin.gltf
+    │   │   ├── sphere
+    │   │   │   ├── sphere.bin
+    │   │   │   └── sphere.gltf
+    │   │   ├── terrain
+    │   │   │   ├── Mountains.bin
+    │   │   │   └── Mountains.gltf
+    │   │   ├── TonemappingTest
+    │   │   │   ├── TestPattern.png
+    │   │   │   ├── TonemappingTest.bin
+    │   │   │   └── TonemappingTest.gltf
+    │   │   ├── torus
+    │   │   │   └── torus.gltf
+    │   │   ├── VolumetricFogExample
+    │   │   │   └── VolumetricFogExample.glb
+    │   │   └── Box0.bin
+    │   ├── pixel
+    │   │   ├── bevy_pixel_dark.png
+    │   │   └── bevy_pixel_light.png
+    │   ├── scenes
+    │   │   └── load_scene_example.scn.ron
+    │   ├── shaders
+    │   │   ├── animate_shader.wgsl
+    │   │   ├── array_texture.wgsl
+    │   │   ├── cubemap_unlit.wgsl
+    │   │   ├── custom_gltf_2d.wgsl
+    │   │   ├── custom_material.frag
+    │   │   ├── custom_material.vert
+    │   │   ├── custom_material.wgsl
+    │   │   ├── custom_material_2d.wgsl
+    │   │   ├── custom_material_import.wgsl
+    │   │   ├── custom_material_screenspace_texture.wgsl
+    │   │   ├── custom_phase_item.wgsl
+    │   │   ├── custom_ui_material.wgsl
+    │   │   ├── custom_vertex_attribute.wgsl
+    │   │   ├── extended_material.wgsl
+    │   │   ├── fallback_image_test.wgsl
+    │   │   ├── game_of_life.wgsl
+    │   │   ├── gpu_readback.wgsl
+    │   │   ├── instancing.wgsl
+    │   │   ├── irradiance_volume_voxel_visualization.wgsl
+    │   │   ├── line_material.wgsl
+    │   │   ├── post_processing.wgsl
+    │   │   ├── shader_defs.wgsl
+    │   │   ├── show_prepass.wgsl
+    │   │   ├── specialized_mesh_pipeline.wgsl
+    │   │   ├── storage_buffer.wgsl
+    │   │   ├── texture_binding_array.wgsl
+    │   │   ├── tonemapping_test_patterns.wgsl
+    │   │   └── water_material.wgsl
+    │   ├── sounds
+    │   │   ├── breakout_collision.ogg
+    │   │   ├── Epic orchestra music.ogg
+    │   │   ├── Mysterious acoustic guitar.ogg
+    │   │   └── Windless Slopes.ogg
+    │   ├── textures
+    │   │   ├── fantasy_ui_borders
+    │   │   │   ├── border_sheet.png
+    │   │   │   ├── License.txt
+    │   │   │   ├── numbered_slices.png
+    │   │   │   ├── panel-border-010-repeated.png
+    │   │   │   ├── panel-border-010.png
+    │   │   │   └── panel-border-015.png
+    │   │   ├── Game Icons
+    │   │   │   ├── exitRight.png
+    │   │   │   ├── right.png
+    │   │   │   └── wrench.png
+    │   │   ├── parallax_example
+    │   │   │   ├── cube_color.png
+    │   │   │   ├── cube_depth.png
+    │   │   │   └── cube_normal.png
+    │   │   ├── rpg
+    │   │   │   ├── chars
+    │   │   │   │   ├── gabe
+    │   │   │   │   │   └── gabe-idle-run.png
+    │   │   │   │   ├── hat-guy
+    │   │   │   │   │   └── hat-guy.png
+    │   │   │   │   ├── mani
+    │   │   │   │   │   └── mani-idle-run.png
+    │   │   │   │   ├── sensei
+    │   │   │   │   │   └── sensei.png
+    │   │   │   │   └── vendor
+    │   │   │   │       └── generic-rpg-vendor.png
+    │   │   │   ├── mobs
+    │   │   │   │   ├── boss_bee.png
+    │   │   │   │   ├── fox-run.png
+    │   │   │   │   ├── kobold-idle.png
+    │   │   │   │   ├── slime-blue.png
+    │   │   │   │   ├── slime-green.png
+    │   │   │   │   ├── slime-orange.png
+    │   │   │   │   └── worm-run-idle.png
+    │   │   │   ├── props
+    │   │   │   │   ├── generic-rpg-barrel01.png
+    │   │   │   │   ├── generic-rpg-barrel02.png
+    │   │   │   │   ├── generic-rpg-barrel03.png
+    │   │   │   │   ├── generic-rpg-board01.png
+    │   │   │   │   ├── generic-rpg-board02.png
+    │   │   │   │   ├── generic-rpg-board03.png
+    │   │   │   │   ├── generic-rpg-board04.png
+    │   │   │   │   ├── generic-rpg-bridge.png
+    │   │   │   │   ├── generic-rpg-crate01.png
+    │   │   │   │   ├── generic-rpg-crate02.png
+    │   │   │   │   ├── generic-rpg-crate03.png
+    │   │   │   │   ├── generic-rpg-fence-complete.png
+    │   │   │   │   ├── generic-rpg-fence-raw01.png
+    │   │   │   │   ├── generic-rpg-fence-raw02.png
+    │   │   │   │   ├── generic-rpg-fence-raw03.png
+    │   │   │   │   ├── generic-rpg-fence-raw04.png
+    │   │   │   │   ├── generic-rpg-fence-raw05.png
+    │   │   │   │   ├── generic-rpg-fence-raw06.png
+    │   │   │   │   ├── generic-rpg-fence-raw07.png
+    │   │   │   │   ├── generic-rpg-fence-raw08.png
+    │   │   │   │   ├── generic-rpg-fence-raw09.png
+    │   │   │   │   ├── generic-rpg-fence-raw10.png
+    │   │   │   │   ├── generic-rpg-fence-raw11.png
+    │   │   │   │   ├── generic-rpg-fence-raw12.png
+    │   │   │   │   ├── generic-rpg-fence-raw13.png
+    │   │   │   │   ├── generic-rpg-fence-raw14.png
+    │   │   │   │   ├── generic-rpg-fence-raw15.png
+    │   │   │   │   ├── generic-rpg-fence-raw16.png
+    │   │   │   │   ├── generic-rpg-fence-raw17.png
+    │   │   │   │   ├── generic-rpg-fence-raw18.png
+    │   │   │   │   ├── generic-rpg-fence-raw19.png
+    │   │   │   │   ├── generic-rpg-fence-raw20.png
+    │   │   │   │   ├── generic-rpg-fence-raw21.png
+    │   │   │   │   ├── generic-rpg-fence-raw22.png
+    │   │   │   │   ├── generic-rpg-fence-raw23.png
+    │   │   │   │   ├── generic-rpg-fence-raw24.png
+    │   │   │   │   ├── generic-rpg-fence-raw25.png
+    │   │   │   │   ├── generic-rpg-fence01.png
+    │   │   │   │   ├── generic-rpg-fence02.png
+    │   │   │   │   ├── generic-rpg-fence03.png
+    │   │   │   │   ├── generic-rpg-fence04.png
+    │   │   │   │   ├── generic-rpg-fence05.png
+    │   │   │   │   ├── generic-rpg-fence06.png
+    │   │   │   │   ├── generic-rpg-fence07.png
+    │   │   │   │   ├── generic-rpg-fence08.png
+    │   │   │   │   ├── generic-rpg-fence09.png
+    │   │   │   │   ├── generic-rpg-fence10.png
+    │   │   │   │   ├── generic-rpg-fence11.png
+    │   │   │   │   ├── generic-rpg-fence12.png
+    │   │   │   │   ├── generic-rpg-fence13.png
+    │   │   │   │   ├── generic-rpg-fence14.png
+    │   │   │   │   ├── generic-rpg-fish01.png
+    │   │   │   │   ├── generic-rpg-fish02.png
+    │   │   │   │   ├── generic-rpg-fish03.png
+    │   │   │   │   ├── generic-rpg-fish04.png
+    │   │   │   │   ├── generic-rpg-flower01.png
+    │   │   │   │   ├── generic-rpg-flower02.png
+    │   │   │   │   ├── generic-rpg-flower03.png
+    │   │   │   │   ├── generic-rpg-flowers.png
+    │   │   │   │   ├── generic-rpg-grass01.png
+    │   │   │   │   ├── generic-rpg-grass02.png
+    │   │   │   │   ├── generic-rpg-house-inn.png
+    │   │   │   │   ├── generic-rpg-loot01.png
+    │   │   │   │   ├── generic-rpg-loot02.png
+    │   │   │   │   ├── generic-rpg-loot03.png
+    │   │   │   │   ├── generic-rpg-loot04.png
+    │   │   │   │   ├── generic-rpg-loot05.png
+    │   │   │   │   ├── generic-rpg-mini-lake.png
+    │   │   │   │   ├── generic-rpg-rock01.png
+    │   │   │   │   ├── generic-rpg-rock02.png
+    │   │   │   │   ├── generic-rpg-rock03.png
+    │   │   │   │   ├── generic-rpg-rock04.png
+    │   │   │   │   ├── generic-rpg-rock05.png
+    │   │   │   │   ├── generic-rpg-rock06.png
+    │   │   │   │   ├── generic-rpg-rod.png
+    │   │   │   │   ├── generic-rpg-trasure-open.png
+    │   │   │   │   ├── generic-rpg-treasure-closed.png
+    │   │   │   │   ├── generic-rpg-tree01.png
+    │   │   │   │   └── generic-rpg-tree02.png
+    │   │   │   ├── tiles
+    │   │   │   │   ├── generic-rpg-Slice.png
+    │   │   │   │   ├── generic-rpg-tile-waterfall01.png
+    │   │   │   │   ├── generic-rpg-tile-waterfall02.png
+    │   │   │   │   ├── generic-rpg-tile-waterfall03.png
+    │   │   │   │   ├── generic-rpg-tile-waterfall04.png
+    │   │   │   │   ├── generic-rpg-tile-waterfall05.png
+    │   │   │   │   ├── generic-rpg-tile-waterfall06.png
+    │   │   │   │   ├── generic-rpg-tile-waterfall07.png
+    │   │   │   │   ├── generic-rpg-tile01.png
+    │   │   │   │   ├── generic-rpg-tile02.png
+    │   │   │   │   ├── generic-rpg-tile03.png
+    │   │   │   │   ├── generic-rpg-tile04.png
+    │   │   │   │   ├── generic-rpg-tile05.png
+    │   │   │   │   ├── generic-rpg-tile06.png
+    │   │   │   │   ├── generic-rpg-tile07.png
+    │   │   │   │   ├── generic-rpg-tile08.png
+    │   │   │   │   ├── generic-rpg-tile09.png
+    │   │   │   │   ├── generic-rpg-tile10.png
+    │   │   │   │   ├── generic-rpg-tile11.png
+    │   │   │   │   ├── generic-rpg-tile12.png
+    │   │   │   │   ├── generic-rpg-tile13.png
+    │   │   │   │   ├── generic-rpg-tile14.png
+    │   │   │   │   ├── generic-rpg-tile15.png
+    │   │   │   │   ├── generic-rpg-tile16.png
+    │   │   │   │   ├── generic-rpg-tile17.png
+    │   │   │   │   ├── generic-rpg-tile18.png
+    │   │   │   │   ├── generic-rpg-tile19.png
+    │   │   │   │   ├── generic-rpg-tile20.png
+    │   │   │   │   ├── generic-rpg-tile21.png
+    │   │   │   │   ├── generic-rpg-tile22.png
+    │   │   │   │   ├── generic-rpg-tile23.png
+    │   │   │   │   ├── generic-rpg-tile24.png
+    │   │   │   │   ├── generic-rpg-tile25.png
+    │   │   │   │   ├── generic-rpg-tile26.png
+    │   │   │   │   ├── generic-rpg-tile27.png
+    │   │   │   │   ├── generic-rpg-tile28.png
+    │   │   │   │   ├── generic-rpg-tile29.png
+    │   │   │   │   ├── generic-rpg-tile30.png
+    │   │   │   │   ├── generic-rpg-tile31.png
+    │   │   │   │   ├── generic-rpg-tile32.png
+    │   │   │   │   ├── generic-rpg-tile33.png
+    │   │   │   │   ├── generic-rpg-tile34.png
+    │   │   │   │   ├── generic-rpg-tile35.png
+    │   │   │   │   ├── generic-rpg-tile37.png
+    │   │   │   │   ├── generic-rpg-tile38.png
+    │   │   │   │   ├── generic-rpg-tile39.png
+    │   │   │   │   ├── generic-rpg-tile40.png
+    │   │   │   │   ├── generic-rpg-tile41.png
+    │   │   │   │   ├── generic-rpg-tile42.png
+    │   │   │   │   ├── generic-rpg-tile43.png
+    │   │   │   │   ├── generic-rpg-tile44.png
+    │   │   │   │   ├── generic-rpg-tile45.png
+    │   │   │   │   ├── generic-rpg-tile46.png
+    │   │   │   │   ├── generic-rpg-tile47.png
+    │   │   │   │   ├── generic-rpg-tile48.png
+    │   │   │   │   ├── generic-rpg-tile49.png
+    │   │   │   │   ├── generic-rpg-tile50.png
+    │   │   │   │   ├── generic-rpg-tile51.png
+    │   │   │   │   ├── generic-rpg-tile52.png
+    │   │   │   │   ├── generic-rpg-tile53.png
+    │   │   │   │   ├── generic-rpg-tile54.png
+    │   │   │   │   ├── generic-rpg-tile55.png
+    │   │   │   │   ├── generic-rpg-tile56.png
+    │   │   │   │   ├── generic-rpg-tile57.png
+    │   │   │   │   ├── generic-rpg-tile58.png
+    │   │   │   │   ├── generic-rpg-tile59.png
+    │   │   │   │   ├── generic-rpg-tile60.png
+    │   │   │   │   ├── generic-rpg-tile61.png
+    │   │   │   │   ├── generic-rpg-tile62.png
+    │   │   │   │   ├── generic-rpg-tile63.png
+    │   │   │   │   ├── generic-rpg-tile64.png
+    │   │   │   │   ├── generic-rpg-tile65.png
+    │   │   │   │   ├── generic-rpg-tile66.png
+    │   │   │   │   ├── generic-rpg-tile67.png
+    │   │   │   │   ├── generic-rpg-tile68.png
+    │   │   │   │   ├── generic-rpg-tile69.png
+    │   │   │   │   ├── generic-rpg-tile70.png
+    │   │   │   │   └── generic-rpg-tile71.png
+    │   │   │   └── ui
+    │   │   │       ├── generic-rpg-ui-inventario.png
+    │   │   │       ├── generic-rpg-ui-inventario01.png
+    │   │   │       ├── generic-rpg-ui-inventario02.png
+    │   │   │       ├── generic-rpg-ui-inventario03.png
+    │   │   │       ├── generic-rpg-ui-inventario04.png
+    │   │   │       └── generic-rpg-ui-text-box.png
+    │   │   ├── simplespace
+    │   │   │   ├── enemy_A.png
+    │   │   │   ├── enemy_B.png
+    │   │   │   ├── License.txt
+    │   │   │   └── ship_C.png
+    │   │   ├── array_texture.png
+    │   │   ├── basic_metering_mask.png
+    │   │   ├── BlueNoise-Normal.png
+    │   │   ├── Ryfjallet_cubemap.png
+    │   │   ├── Ryfjallet_cubemap_astc4x4.ktx2
+    │   │   ├── Ryfjallet_cubemap_bc7.ktx2
+    │   │   ├── Ryfjallet_cubemap_etc2.ktx2
+    │   │   ├── Ryfjallet_cubemap_readme.txt
+    │   │   ├── ScratchedGold-Normal.png
+    │   │   ├── slice_square.png
+    │   │   ├── slice_square_2.png
+    │   │   ├── spiaggia_di_mondello_1k.hdr
+    │   │   ├── uv_checker_bw.png
+    │   │   └── water_normals.png
+    │   └── volumes
+    │       ├── bunny.ktx2
+    │       └── fog_noise.ktx2
+    ├── crates
+    │   ├── bevy_a11y
+    │   │   ├── src
+    │   │   │   └── lib.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_animation
+    │   │   ├── src
+    │   │   │   ├── animatable.rs
+    │   │   │   ├── animation_curves.rs
+    │   │   │   ├── gltf_curves.rs
+    │   │   │   ├── graph.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── transition.rs
+    │   │   │   └── util.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_app
+    │   │   ├── src
+    │   │   │   ├── app.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── main_schedule.rs
+    │   │   │   ├── panic_handler.rs
+    │   │   │   ├── plugin.rs
+    │   │   │   ├── plugin_group.rs
+    │   │   │   ├── schedule_runner.rs
+    │   │   │   ├── sub_app.rs
+    │   │   │   └── terminal_ctrl_c_handler.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_asset
+    │   │   ├── macros
+    │   │   │   ├── src
+    │   │   │   │   └── lib.rs
+    │   │   │   └── Cargo.toml
+    │   │   ├── src
+    │   │   │   ├── io
+    │   │   │   │   ├── embedded
+    │   │   │   │   │   ├── embedded_watcher.rs
+    │   │   │   │   │   └── mod.rs
+    │   │   │   │   ├── file
+    │   │   │   │   │   ├── file_asset.rs
+    │   │   │   │   │   ├── file_watcher.rs
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   └── sync_file_asset.rs
+    │   │   │   │   ├── android.rs
+    │   │   │   │   ├── gated.rs
+    │   │   │   │   ├── memory.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── processor_gated.rs
+    │   │   │   │   ├── source.rs
+    │   │   │   │   └── wasm.rs
+    │   │   │   ├── processor
+    │   │   │   │   ├── log.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── process.rs
+    │   │   │   ├── server
+    │   │   │   │   ├── info.rs
+    │   │   │   │   ├── loaders.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── assets.rs
+    │   │   │   ├── direct_access_ext.rs
+    │   │   │   ├── event.rs
+    │   │   │   ├── folder.rs
+    │   │   │   ├── handle.rs
+    │   │   │   ├── id.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── loader.rs
+    │   │   │   ├── loader_builders.rs
+    │   │   │   ├── meta.rs
+    │   │   │   ├── path.rs
+    │   │   │   ├── reflect.rs
+    │   │   │   ├── render_asset.rs
+    │   │   │   ├── saver.rs
+    │   │   │   └── transformer.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_audio
+    │   │   ├── src
+    │   │   │   ├── audio.rs
+    │   │   │   ├── audio_output.rs
+    │   │   │   ├── audio_source.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── pitch.rs
+    │   │   │   └── sinks.rs
+    │   │   ├── Cargo.toml
+    │   │   ├── CONTRIBUTING.md
+    │   │   └── README.md
+    │   ├── bevy_color
+    │   │   ├── crates
+    │   │   │   └── gen_tests
+    │   │   │       ├── src
+    │   │   │       │   └── main.rs
+    │   │   │       ├── Cargo.toml
+    │   │   │       └── README.md
+    │   │   ├── docs
+    │   │   │   ├── diagrams
+    │   │   │   │   ├── model_graph.mmd
+    │   │   │   │   ├── model_graph.svg
+    │   │   │   │   └── README.md
+    │   │   │   └── conversion.md
+    │   │   ├── src
+    │   │   │   ├── palettes
+    │   │   │   │   ├── basic.rs
+    │   │   │   │   ├── css.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── tailwind.rs
+    │   │   │   ├── color.rs
+    │   │   │   ├── color_difference.rs
+    │   │   │   ├── color_gradient.rs
+    │   │   │   ├── color_ops.rs
+    │   │   │   ├── color_range.rs
+    │   │   │   ├── hsla.rs
+    │   │   │   ├── hsva.rs
+    │   │   │   ├── hwba.rs
+    │   │   │   ├── laba.rs
+    │   │   │   ├── lcha.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── linear_rgba.rs
+    │   │   │   ├── oklaba.rs
+    │   │   │   ├── oklcha.rs
+    │   │   │   ├── srgba.rs
+    │   │   │   ├── test_colors.rs
+    │   │   │   ├── testing.rs
+    │   │   │   └── xyza.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_core
+    │   │   ├── src
+    │   │   │   ├── lib.rs
+    │   │   │   ├── name.rs
+    │   │   │   ├── serde.rs
+    │   │   │   └── task_pool_options.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_core_pipeline
+    │   │   ├── src
+    │   │   │   ├── auto_exposure
+    │   │   │   │   ├── auto_exposure.wgsl
+    │   │   │   │   ├── buffers.rs
+    │   │   │   │   ├── compensation_curve.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── node.rs
+    │   │   │   │   ├── pipeline.rs
+    │   │   │   │   └── settings.rs
+    │   │   │   ├── blit
+    │   │   │   │   ├── blit.wgsl
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── bloom
+    │   │   │   │   ├── bloom.wgsl
+    │   │   │   │   ├── downsampling_pipeline.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── settings.rs
+    │   │   │   │   └── upsampling_pipeline.rs
+    │   │   │   ├── contrast_adaptive_sharpening
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── node.rs
+    │   │   │   │   └── robust_contrast_adaptive_sharpening.wgsl
+    │   │   │   ├── core_2d
+    │   │   │   │   ├── camera_2d.rs
+    │   │   │   │   ├── main_opaque_pass_2d_node.rs
+    │   │   │   │   ├── main_transparent_pass_2d_node.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── core_3d
+    │   │   │   │   ├── camera_3d.rs
+    │   │   │   │   ├── main_opaque_pass_3d_node.rs
+    │   │   │   │   ├── main_transmissive_pass_3d_node.rs
+    │   │   │   │   ├── main_transparent_pass_3d_node.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── deferred
+    │   │   │   │   ├── copy_deferred_lighting_id.wgsl
+    │   │   │   │   ├── copy_lighting_id.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── node.rs
+    │   │   │   ├── dof
+    │   │   │   │   ├── dof.wgsl
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── fullscreen_vertex_shader
+    │   │   │   │   ├── fullscreen.wgsl
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── fxaa
+    │   │   │   │   ├── fxaa.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── node.rs
+    │   │   │   ├── motion_blur
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── motion_blur.wgsl
+    │   │   │   │   ├── node.rs
+    │   │   │   │   └── pipeline.rs
+    │   │   │   ├── oit
+    │   │   │   │   ├── resolve
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   ├── node.rs
+    │   │   │   │   │   └── oit_resolve.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── oit_draw.wgsl
+    │   │   │   ├── post_process
+    │   │   │   │   ├── chromatic_aberration.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── post_process.wgsl
+    │   │   │   ├── prepass
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── node.rs
+    │   │   │   ├── skybox
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── prepass.rs
+    │   │   │   │   ├── skybox.wgsl
+    │   │   │   │   └── skybox_prepass.wgsl
+    │   │   │   ├── smaa
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── smaa.wgsl
+    │   │   │   │   ├── SMAAAreaLUT.ktx2
+    │   │   │   │   └── SMAASearchLUT.ktx2
+    │   │   │   ├── taa
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── taa.wgsl
+    │   │   │   ├── tonemapping
+    │   │   │   │   ├── luts
+    │   │   │   │   │   ├── AgX-default_contrast.ktx2
+    │   │   │   │   │   ├── Blender_-11_12.ktx2
+    │   │   │   │   │   ├── info.txt
+    │   │   │   │   │   └── tony_mc_mapface.ktx2
+    │   │   │   │   ├── lut_bindings.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── node.rs
+    │   │   │   │   ├── tonemapping.wgsl
+    │   │   │   │   └── tonemapping_shared.wgsl
+    │   │   │   ├── upscaling
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── node.rs
+    │   │   │   ├── lib.rs
+    │   │   │   └── msaa_writeback.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_derive
+    │   │   ├── compile_fail
+    │   │   │   ├── src
+    │   │   │   │   └── lib.rs
+    │   │   │   ├── tests
+    │   │   │   │   ├── deref_derive
+    │   │   │   │   │   ├── invalid_attribute_fail.rs
+    │   │   │   │   │   ├── invalid_attribute_fail.stderr
+    │   │   │   │   │   ├── invalid_item_fail.rs
+    │   │   │   │   │   ├── invalid_item_fail.stderr
+    │   │   │   │   │   ├── missing_attribute_fail.rs
+    │   │   │   │   │   ├── missing_attribute_fail.stderr
+    │   │   │   │   │   ├── multiple_attributes_fail.rs
+    │   │   │   │   │   ├── multiple_attributes_fail.stderr
+    │   │   │   │   │   ├── multiple_fields_pass.rs
+    │   │   │   │   │   └── single_field_pass.rs
+    │   │   │   │   ├── deref_mut_derive
+    │   │   │   │   │   ├── invalid_attribute_fail.rs
+    │   │   │   │   │   ├── invalid_attribute_fail.stderr
+    │   │   │   │   │   ├── invalid_item_fail.rs
+    │   │   │   │   │   ├── invalid_item_fail.stderr
+    │   │   │   │   │   ├── mismatched_target_type_fail.rs
+    │   │   │   │   │   ├── mismatched_target_type_fail.stderr
+    │   │   │   │   │   ├── missing_attribute_fail.rs
+    │   │   │   │   │   ├── missing_attribute_fail.stderr
+    │   │   │   │   │   ├── missing_deref_fail.rs
+    │   │   │   │   │   ├── missing_deref_fail.stderr
+    │   │   │   │   │   ├── multiple_attributes_fail.rs
+    │   │   │   │   │   ├── multiple_attributes_fail.stderr
+    │   │   │   │   │   ├── multiple_fields_pass.rs
+    │   │   │   │   │   └── single_field_pass.rs
+    │   │   │   │   └── derive.rs
+    │   │   │   ├── Cargo.toml
+    │   │   │   └── README.md
+    │   │   ├── src
+    │   │   │   ├── bevy_main.rs
+    │   │   │   ├── derefs.rs
+    │   │   │   ├── enum_variant_meta.rs
+    │   │   │   └── lib.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_dev_tools
+    │   │   ├── src
+    │   │   │   ├── ci_testing
+    │   │   │   │   ├── config.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── systems.rs
+    │   │   │   ├── ui_debug_overlay
+    │   │   │   │   ├── inset.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── fps_overlay.rs
+    │   │   │   ├── lib.rs
+    │   │   │   └── states.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_diagnostic
+    │   │   ├── src
+    │   │   │   ├── diagnostic.rs
+    │   │   │   ├── entity_count_diagnostics_plugin.rs
+    │   │   │   ├── frame_time_diagnostics_plugin.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── log_diagnostics_plugin.rs
+    │   │   │   └── system_information_diagnostics_plugin.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_dylib
+    │   │   ├── src
+    │   │   │   └── lib.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_ecs
+    │   │   ├── compile_fail
+    │   │   │   ├── src
+    │   │   │   │   └── lib.rs
+    │   │   │   ├── tests
+    │   │   │   │   ├── ui
+    │   │   │   │   │   ├── entity_ref_mut_lifetime_safety.rs
+    │   │   │   │   │   ├── entity_ref_mut_lifetime_safety.stderr
+    │   │   │   │   │   ├── query_exact_sized_iterator_safety.rs
+    │   │   │   │   │   ├── query_exact_sized_iterator_safety.stderr
+    │   │   │   │   │   ├── query_iter_combinations_mut_iterator_safety.rs
+    │   │   │   │   │   ├── query_iter_combinations_mut_iterator_safety.stderr
+    │   │   │   │   │   ├── query_iter_many_mut_iterator_safety.rs
+    │   │   │   │   │   ├── query_iter_many_mut_iterator_safety.stderr
+    │   │   │   │   │   ├── query_lifetime_safety.rs
+    │   │   │   │   │   ├── query_lifetime_safety.stderr
+    │   │   │   │   │   ├── query_to_readonly.rs
+    │   │   │   │   │   ├── query_to_readonly.stderr
+    │   │   │   │   │   ├── query_transmute_safety.rs
+    │   │   │   │   │   ├── query_transmute_safety.stderr
+    │   │   │   │   │   ├── system_param_derive_readonly.rs
+    │   │   │   │   │   ├── system_param_derive_readonly.stderr
+    │   │   │   │   │   ├── system_query_get_lifetime_safety.rs
+    │   │   │   │   │   ├── system_query_get_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_query_get_many_lifetime_safety.rs
+    │   │   │   │   │   ├── system_query_get_many_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_query_get_many_mut_lifetime_safety.rs
+    │   │   │   │   │   ├── system_query_get_many_mut_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_query_iter_lifetime_safety.rs
+    │   │   │   │   │   ├── system_query_iter_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_query_iter_many_mut_lifetime_safety.rs
+    │   │   │   │   │   ├── system_query_iter_many_mut_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_query_set_get_lifetime_safety.rs
+    │   │   │   │   │   ├── system_query_set_get_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_query_set_iter_lifetime_safety.rs
+    │   │   │   │   │   ├── system_query_set_iter_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_state_get_lifetime_safety.rs
+    │   │   │   │   │   ├── system_state_get_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_state_iter_lifetime_safety.rs
+    │   │   │   │   │   ├── system_state_iter_lifetime_safety.stderr
+    │   │   │   │   │   ├── system_state_iter_mut_overlap_safety.rs
+    │   │   │   │   │   ├── system_state_iter_mut_overlap_safety.stderr
+    │   │   │   │   │   ├── world_query_derive.rs
+    │   │   │   │   │   └── world_query_derive.stderr
+    │   │   │   │   └── ui.rs
+    │   │   │   ├── Cargo.toml
+    │   │   │   └── README.md
+    │   │   ├── examples
+    │   │   │   ├── change_detection.rs
+    │   │   │   ├── events.rs
+    │   │   │   └── resources.rs
+    │   │   ├── macros
+    │   │   │   ├── src
+    │   │   │   │   ├── component.rs
+    │   │   │   │   ├── lib.rs
+    │   │   │   │   ├── query_data.rs
+    │   │   │   │   ├── query_filter.rs
+    │   │   │   │   ├── states.rs
+    │   │   │   │   └── world_query.rs
+    │   │   │   └── Cargo.toml
+    │   │   ├── src
+    │   │   │   ├── entity
+    │   │   │   │   ├── hash.rs
+    │   │   │   │   ├── map_entities.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── visit_entities.rs
+    │   │   │   ├── event
+    │   │   │   │   ├── base.rs
+    │   │   │   │   ├── collections.rs
+    │   │   │   │   ├── event_cursor.rs
+    │   │   │   │   ├── iterators.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── mut_iterators.rs
+    │   │   │   │   ├── mutator.rs
+    │   │   │   │   ├── reader.rs
+    │   │   │   │   ├── registry.rs
+    │   │   │   │   ├── send_event.rs
+    │   │   │   │   ├── update.rs
+    │   │   │   │   └── writer.rs
+    │   │   │   ├── identifier
+    │   │   │   │   ├── error.rs
+    │   │   │   │   ├── kinds.rs
+    │   │   │   │   ├── masks.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── observer
+    │   │   │   │   ├── entity_observer.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── runner.rs
+    │   │   │   │   └── trigger_event.rs
+    │   │   │   ├── query
+    │   │   │   │   ├── access.rs
+    │   │   │   │   ├── builder.rs
+    │   │   │   │   ├── error.rs
+    │   │   │   │   ├── fetch.rs
+    │   │   │   │   ├── filter.rs
+    │   │   │   │   ├── iter.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── par_iter.rs
+    │   │   │   │   ├── state.rs
+    │   │   │   │   └── world_query.rs
+    │   │   │   ├── reflect
+    │   │   │   │   ├── bundle.rs
+    │   │   │   │   ├── component.rs
+    │   │   │   │   ├── entity_commands.rs
+    │   │   │   │   ├── from_world.rs
+    │   │   │   │   ├── map_entities.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── resource.rs
+    │   │   │   │   └── visit_entities.rs
+    │   │   │   ├── schedule
+    │   │   │   │   ├── executor
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   ├── multi_threaded.rs
+    │   │   │   │   │   ├── simple.rs
+    │   │   │   │   │   └── single_threaded.rs
+    │   │   │   │   ├── condition.rs
+    │   │   │   │   ├── config.rs
+    │   │   │   │   ├── graph_utils.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── schedule.rs
+    │   │   │   │   ├── set.rs
+    │   │   │   │   └── stepping.rs
+    │   │   │   ├── storage
+    │   │   │   │   ├── table
+    │   │   │   │   │   ├── column.rs
+    │   │   │   │   │   └── mod.rs
+    │   │   │   │   ├── blob_array.rs
+    │   │   │   │   ├── blob_vec.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── resource.rs
+    │   │   │   │   ├── sparse_set.rs
+    │   │   │   │   └── thin_array_ptr.rs
+    │   │   │   ├── system
+    │   │   │   │   ├── commands
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   └── parallel_scope.rs
+    │   │   │   │   ├── adapter_system.rs
+    │   │   │   │   ├── builder.rs
+    │   │   │   │   ├── combinator.rs
+    │   │   │   │   ├── exclusive_function_system.rs
+    │   │   │   │   ├── exclusive_system_param.rs
+    │   │   │   │   ├── function_system.rs
+    │   │   │   │   ├── input.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── observer_system.rs
+    │   │   │   │   ├── query.rs
+    │   │   │   │   ├── system.rs
+    │   │   │   │   ├── system_name.rs
+    │   │   │   │   ├── system_param.rs
+    │   │   │   │   └── system_registry.rs
+    │   │   │   ├── world
+    │   │   │   │   ├── command_queue.rs
+    │   │   │   │   ├── component_constants.rs
+    │   │   │   │   ├── deferred_world.rs
+    │   │   │   │   ├── entity_fetch.rs
+    │   │   │   │   ├── entity_ref.rs
+    │   │   │   │   ├── error.rs
+    │   │   │   │   ├── filtered_resource.rs
+    │   │   │   │   ├── identifier.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── reflect.rs
+    │   │   │   │   ├── spawn_batch.rs
+    │   │   │   │   └── unsafe_world_cell.rs
+    │   │   │   ├── archetype.rs
+    │   │   │   ├── batching.rs
+    │   │   │   ├── bundle.rs
+    │   │   │   ├── change_detection.rs
+    │   │   │   ├── component.rs
+    │   │   │   ├── intern.rs
+    │   │   │   ├── label.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── removal_detection.rs
+    │   │   │   └── traversal.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_encase_derive
+    │   │   ├── src
+    │   │   │   └── lib.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_gilrs
+    │   │   ├── src
+    │   │   │   ├── converter.rs
+    │   │   │   ├── gilrs_system.rs
+    │   │   │   ├── lib.rs
+    │   │   │   └── rumble.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_gizmos
+    │   │   ├── macros
+    │   │   │   ├── src
+    │   │   │   │   └── lib.rs
+    │   │   │   └── Cargo.toml
+    │   │   ├── src
+    │   │   │   ├── primitives
+    │   │   │   │   ├── dim2.rs
+    │   │   │   │   ├── dim3.rs
+    │   │   │   │   ├── helpers.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── aabb.rs
+    │   │   │   ├── arcs.rs
+    │   │   │   ├── arrows.rs
+    │   │   │   ├── circles.rs
+    │   │   │   ├── config.rs
+    │   │   │   ├── cross.rs
+    │   │   │   ├── curves.rs
+    │   │   │   ├── gizmos.rs
+    │   │   │   ├── grid.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── light.rs
+    │   │   │   ├── line_joints.wgsl
+    │   │   │   ├── lines.wgsl
+    │   │   │   ├── pipeline_2d.rs
+    │   │   │   ├── pipeline_3d.rs
+    │   │   │   └── rounded_box.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_gltf
+    │   │   ├── src
+    │   │   │   ├── lib.rs
+    │   │   │   ├── loader.rs
+    │   │   │   └── vertex_attributes.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_hierarchy
+    │   │   ├── src
+    │   │   │   ├── components
+    │   │   │   │   ├── children.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── parent.rs
+    │   │   │   ├── child_builder.rs
+    │   │   │   ├── events.rs
+    │   │   │   ├── hierarchy.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── query_extension.rs
+    │   │   │   └── valid_parent_check_plugin.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_image
+    │   │   ├── src
+    │   │   │   ├── basis.rs
+    │   │   │   ├── compressed_image_saver.rs
+    │   │   │   ├── dds.rs
+    │   │   │   ├── exr_texture_loader.rs
+    │   │   │   ├── hdr_texture_loader.rs
+    │   │   │   ├── image.rs
+    │   │   │   ├── image_loader.rs
+    │   │   │   ├── image_texture_conversion.rs
+    │   │   │   ├── ktx2.rs
+    │   │   │   └── lib.rs
+    │   │   └── Cargo.toml
+    │   ├── bevy_input
+    │   │   ├── src
+    │   │   │   ├── axis.rs
+    │   │   │   ├── button_input.rs
+    │   │   │   ├── common_conditions.rs
+    │   │   │   ├── gamepad.rs
+    │   │   │   ├── gestures.rs
+    │   │   │   ├── keyboard.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── mouse.rs
+    │   │   │   └── touch.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_internal
+    │   │   ├── src
+    │   │   │   ├── default_plugins.rs
+    │   │   │   ├── lib.rs
+    │   │   │   └── prelude.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_log
+    │   │   ├── src
+    │   │   │   ├── android_tracing.rs
+    │   │   │   └── lib.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_macro_utils
+    │   │   ├── src
+    │   │   │   ├── attrs.rs
+    │   │   │   ├── bevy_manifest.rs
+    │   │   │   ├── fq_std.rs
+    │   │   │   ├── label.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── shape.rs
+    │   │   │   └── symbol.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_math
+    │   │   ├── src
+    │   │   │   ├── bounding
+    │   │   │   │   ├── bounded2d
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   └── primitive_impls.rs
+    │   │   │   │   ├── bounded3d
+    │   │   │   │   │   ├── extrusion.rs
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   └── primitive_impls.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── raycast2d.rs
+    │   │   │   │   └── raycast3d.rs
+    │   │   │   ├── curve
+    │   │   │   │   ├── adaptors.rs
+    │   │   │   │   ├── cores.rs
+    │   │   │   │   ├── easing.rs
+    │   │   │   │   ├── interval.rs
+    │   │   │   │   ├── iterable.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── sample_curves.rs
+    │   │   │   ├── primitives
+    │   │   │   │   ├── dim2.rs
+    │   │   │   │   ├── dim3.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── serde.rs
+    │   │   │   ├── rects
+    │   │   │   │   ├── irect.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── rect.rs
+    │   │   │   │   └── urect.rs
+    │   │   │   ├── sampling
+    │   │   │   │   ├── mesh_sampling.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── shape_sampling.rs
+    │   │   │   │   └── standard.rs
+    │   │   │   ├── affine3.rs
+    │   │   │   ├── aspect_ratio.rs
+    │   │   │   ├── common_traits.rs
+    │   │   │   ├── compass.rs
+    │   │   │   ├── cubic_splines.rs
+    │   │   │   ├── direction.rs
+    │   │   │   ├── float_ord.rs
+    │   │   │   ├── isometry.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── ops.rs
+    │   │   │   ├── ray.rs
+    │   │   │   └── rotation2d.rs
+    │   │   ├── Cargo.toml
+    │   │   ├── clippy.toml
+    │   │   └── README.md
+    │   ├── bevy_mesh
+    │   │   ├── src
+    │   │   │   ├── primitives
+    │   │   │   │   ├── dim3
+    │   │   │   │   │   ├── capsule.rs
+    │   │   │   │   │   ├── cone.rs
+    │   │   │   │   │   ├── conical_frustum.rs
+    │   │   │   │   │   ├── cuboid.rs
+    │   │   │   │   │   ├── cylinder.rs
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   ├── plane.rs
+    │   │   │   │   │   ├── sphere.rs
+    │   │   │   │   │   ├── tetrahedron.rs
+    │   │   │   │   │   ├── torus.rs
+    │   │   │   │   │   └── triangle3d.rs
+    │   │   │   │   ├── dim2.rs
+    │   │   │   │   ├── extrusion.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── conversions.rs
+    │   │   │   ├── index.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── mesh.rs
+    │   │   │   ├── mikktspace.rs
+    │   │   │   ├── morph.rs
+    │   │   │   ├── skinning.rs
+    │   │   │   └── vertex.rs
+    │   │   └── Cargo.toml
+    │   ├── bevy_mikktspace
+    │   │   ├── examples
+    │   │   │   ├── cube.obj
+    │   │   │   └── generate.rs
+    │   │   ├── src
+    │   │   │   ├── generated.rs
+    │   │   │   └── lib.rs
+    │   │   ├── tests
+    │   │   │   └── regression_test.rs
+    │   │   ├── Cargo.toml
+    │   │   ├── LICENSE-APACHE
+    │   │   ├── LICENSE-MIT
+    │   │   └── README.md
+    │   ├── bevy_pbr
+    │   │   ├── src
+    │   │   │   ├── cluster
+    │   │   │   │   ├── assign.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── test.rs
+    │   │   │   ├── deferred
+    │   │   │   │   ├── deferred_lighting.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── pbr_deferred_functions.wgsl
+    │   │   │   │   └── pbr_deferred_types.wgsl
+    │   │   │   ├── light
+    │   │   │   │   ├── ambient_light.rs
+    │   │   │   │   ├── directional_light.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── point_light.rs
+    │   │   │   │   └── spot_light.rs
+    │   │   │   ├── light_probe
+    │   │   │   │   ├── environment_map.rs
+    │   │   │   │   ├── environment_map.wgsl
+    │   │   │   │   ├── irradiance_volume.rs
+    │   │   │   │   ├── irradiance_volume.wgsl
+    │   │   │   │   ├── light_probe.wgsl
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── lightmap
+    │   │   │   │   ├── lightmap.wgsl
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── meshlet
+    │   │   │   │   ├── asset.rs
+    │   │   │   │   ├── cull_clusters.wgsl
+    │   │   │   │   ├── downsample_depth.wgsl
+    │   │   │   │   ├── dummy_visibility_buffer_resolve.wgsl
+    │   │   │   │   ├── fill_cluster_buffers.wgsl
+    │   │   │   │   ├── from_mesh.rs
+    │   │   │   │   ├── instance_manager.rs
+    │   │   │   │   ├── material_pipeline_prepare.rs
+    │   │   │   │   ├── material_shade_nodes.rs
+    │   │   │   │   ├── meshlet_bindings.wgsl
+    │   │   │   │   ├── meshlet_mesh_manager.rs
+    │   │   │   │   ├── meshlet_mesh_material.wgsl
+    │   │   │   │   ├── meshlet_preview.png
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── persistent_buffer.rs
+    │   │   │   │   ├── persistent_buffer_impls.rs
+    │   │   │   │   ├── pipelines.rs
+    │   │   │   │   ├── remap_1d_to_2d_dispatch.wgsl
+    │   │   │   │   ├── resolve_render_targets.wgsl
+    │   │   │   │   ├── resource_manager.rs
+    │   │   │   │   ├── visibility_buffer_hardware_raster.wgsl
+    │   │   │   │   ├── visibility_buffer_raster_node.rs
+    │   │   │   │   ├── visibility_buffer_resolve.wgsl
+    │   │   │   │   └── visibility_buffer_software_raster.wgsl
+    │   │   │   ├── prepass
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── prepass.wgsl
+    │   │   │   │   ├── prepass_bindings.rs
+    │   │   │   │   ├── prepass_bindings.wgsl
+    │   │   │   │   ├── prepass_io.wgsl
+    │   │   │   │   └── prepass_utils.wgsl
+    │   │   │   ├── render
+    │   │   │   │   ├── clustered_forward.wgsl
+    │   │   │   │   ├── fog.rs
+    │   │   │   │   ├── fog.wgsl
+    │   │   │   │   ├── forward_io.wgsl
+    │   │   │   │   ├── gpu_preprocess.rs
+    │   │   │   │   ├── light.rs
+    │   │   │   │   ├── mesh.rs
+    │   │   │   │   ├── mesh.wgsl
+    │   │   │   │   ├── mesh_bindings.rs
+    │   │   │   │   ├── mesh_bindings.wgsl
+    │   │   │   │   ├── mesh_functions.wgsl
+    │   │   │   │   ├── mesh_preprocess.wgsl
+    │   │   │   │   ├── mesh_types.wgsl
+    │   │   │   │   ├── mesh_view_bindings.rs
+    │   │   │   │   ├── mesh_view_bindings.wgsl
+    │   │   │   │   ├── mesh_view_types.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── morph.rs
+    │   │   │   │   ├── morph.wgsl
+    │   │   │   │   ├── parallax_mapping.wgsl
+    │   │   │   │   ├── pbr.wgsl
+    │   │   │   │   ├── pbr_ambient.wgsl
+    │   │   │   │   ├── pbr_bindings.wgsl
+    │   │   │   │   ├── pbr_fragment.wgsl
+    │   │   │   │   ├── pbr_functions.wgsl
+    │   │   │   │   ├── pbr_lighting.wgsl
+    │   │   │   │   ├── pbr_prepass.wgsl
+    │   │   │   │   ├── pbr_prepass_functions.wgsl
+    │   │   │   │   ├── pbr_transmission.wgsl
+    │   │   │   │   ├── pbr_types.wgsl
+    │   │   │   │   ├── rgb9e5.wgsl
+    │   │   │   │   ├── shadow_sampling.wgsl
+    │   │   │   │   ├── shadows.wgsl
+    │   │   │   │   ├── skin.rs
+    │   │   │   │   ├── skinning.wgsl
+    │   │   │   │   ├── utils.wgsl
+    │   │   │   │   ├── view_transformations.wgsl
+    │   │   │   │   └── wireframe.wgsl
+    │   │   │   ├── ssao
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── preprocess_depth.wgsl
+    │   │   │   │   ├── spatial_denoise.wgsl
+    │   │   │   │   ├── ssao.wgsl
+    │   │   │   │   └── ssao_utils.wgsl
+    │   │   │   ├── ssr
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── raymarch.wgsl
+    │   │   │   │   └── ssr.wgsl
+    │   │   │   ├── volumetric_fog
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── render.rs
+    │   │   │   │   └── volumetric_fog.wgsl
+    │   │   │   ├── bundle.rs
+    │   │   │   ├── extended_material.rs
+    │   │   │   ├── fog.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── material.rs
+    │   │   │   ├── mesh_material.rs
+    │   │   │   ├── parallax.rs
+    │   │   │   ├── pbr_material.rs
+    │   │   │   └── wireframe.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_picking
+    │   │   ├── src
+    │   │   │   ├── mesh_picking
+    │   │   │   │   ├── ray_cast
+    │   │   │   │   │   ├── intersections.rs
+    │   │   │   │   │   └── mod.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── backend.rs
+    │   │   │   ├── events.rs
+    │   │   │   ├── focus.rs
+    │   │   │   ├── input.rs
+    │   │   │   ├── lib.rs
+    │   │   │   └── pointer.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_ptr
+    │   │   ├── src
+    │   │   │   └── lib.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_reflect
+    │   │   ├── compile_fail
+    │   │   │   ├── src
+    │   │   │   │   └── lib.rs
+    │   │   │   ├── tests
+    │   │   │   │   ├── into_function
+    │   │   │   │   │   ├── arguments_fail.rs
+    │   │   │   │   │   ├── closure_fail.rs
+    │   │   │   │   │   └── return_fail.rs
+    │   │   │   │   ├── reflect_derive
+    │   │   │   │   │   ├── bounds_pass.rs
+    │   │   │   │   │   ├── custom_where_fail.rs
+    │   │   │   │   │   ├── custom_where_fail.stderr
+    │   │   │   │   │   ├── custom_where_pass.rs
+    │   │   │   │   │   ├── from_reflect_fail.rs
+    │   │   │   │   │   ├── from_reflect_fail.stderr
+    │   │   │   │   │   ├── from_reflect_pass.rs
+    │   │   │   │   │   ├── generics_fail.rs
+    │   │   │   │   │   ├── generics_fail.stderr
+    │   │   │   │   │   ├── generics_structs_pass.rs
+    │   │   │   │   │   ├── lifetimes_pass.rs
+    │   │   │   │   │   ├── lifetimes_pass.stderr
+    │   │   │   │   │   └── nested_pass.rs
+    │   │   │   │   ├── reflect_remote
+    │   │   │   │   │   ├── incorrect_wrapper_fail.rs
+    │   │   │   │   │   ├── incorrect_wrapper_pass.rs
+    │   │   │   │   │   ├── invalid_definition_fail.rs
+    │   │   │   │   │   ├── invalid_definition_pass.rs
+    │   │   │   │   │   ├── macro_order_fail.rs
+    │   │   │   │   │   ├── macro_order_pass.rs
+    │   │   │   │   │   ├── nested_fail.rs
+    │   │   │   │   │   ├── nested_pass.rs
+    │   │   │   │   │   ├── type_mismatch_fail.rs
+    │   │   │   │   │   └── type_mismatch_pass.rs
+    │   │   │   │   ├── derive.rs
+    │   │   │   │   ├── func.rs
+    │   │   │   │   └── remote.rs
+    │   │   │   ├── Cargo.toml
+    │   │   │   └── README.md
+    │   │   ├── derive
+    │   │   │   ├── src
+    │   │   │   │   ├── impls
+    │   │   │   │   │   ├── func
+    │   │   │   │   │   │   ├── from_arg.rs
+    │   │   │   │   │   │   ├── function_impls.rs
+    │   │   │   │   │   │   ├── get_ownership.rs
+    │   │   │   │   │   │   ├── into_return.rs
+    │   │   │   │   │   │   └── mod.rs
+    │   │   │   │   │   ├── assertions.rs
+    │   │   │   │   │   ├── common.rs
+    │   │   │   │   │   ├── enums.rs
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   ├── opaque.rs
+    │   │   │   │   │   ├── structs.rs
+    │   │   │   │   │   ├── tuple_structs.rs
+    │   │   │   │   │   └── typed.rs
+    │   │   │   │   ├── attribute_parser.rs
+    │   │   │   │   ├── container_attributes.rs
+    │   │   │   │   ├── custom_attributes.rs
+    │   │   │   │   ├── derive_data.rs
+    │   │   │   │   ├── documentation.rs
+    │   │   │   │   ├── enum_utility.rs
+    │   │   │   │   ├── field_attributes.rs
+    │   │   │   │   ├── from_reflect.rs
+    │   │   │   │   ├── generics.rs
+    │   │   │   │   ├── ident.rs
+    │   │   │   │   ├── lib.rs
+    │   │   │   │   ├── meta.rs
+    │   │   │   │   ├── reflect_opaque.rs
+    │   │   │   │   ├── registration.rs
+    │   │   │   │   ├── remote.rs
+    │   │   │   │   ├── result_sifter.rs
+    │   │   │   │   ├── serialization.rs
+    │   │   │   │   ├── string_expr.rs
+    │   │   │   │   ├── struct_utility.rs
+    │   │   │   │   ├── trait_reflection.rs
+    │   │   │   │   ├── type_path.rs
+    │   │   │   │   └── where_clause_options.rs
+    │   │   │   └── Cargo.toml
+    │   │   ├── examples
+    │   │   │   └── reflect_docs.rs
+    │   │   ├── src
+    │   │   │   ├── enums
+    │   │   │   │   ├── dynamic_enum.rs
+    │   │   │   │   ├── enum_trait.rs
+    │   │   │   │   ├── helpers.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── variants.rs
+    │   │   │   ├── func
+    │   │   │   │   ├── args
+    │   │   │   │   │   ├── arg.rs
+    │   │   │   │   │   ├── error.rs
+    │   │   │   │   │   ├── from_arg.rs
+    │   │   │   │   │   ├── info.rs
+    │   │   │   │   │   ├── list.rs
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   └── ownership.rs
+    │   │   │   │   ├── dynamic_function.rs
+    │   │   │   │   ├── dynamic_function_mut.rs
+    │   │   │   │   ├── error.rs
+    │   │   │   │   ├── function.rs
+    │   │   │   │   ├── info.rs
+    │   │   │   │   ├── into_function.rs
+    │   │   │   │   ├── into_function_mut.rs
+    │   │   │   │   ├── macros.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── reflect_fn.rs
+    │   │   │   │   ├── reflect_fn_mut.rs
+    │   │   │   │   ├── registry.rs
+    │   │   │   │   └── return_type.rs
+    │   │   │   ├── impls
+    │   │   │   │   ├── glam.rs
+    │   │   │   │   ├── petgraph.rs
+    │   │   │   │   ├── smallvec.rs
+    │   │   │   │   ├── smol_str.rs
+    │   │   │   │   ├── std.rs
+    │   │   │   │   ├── uuid.rs
+    │   │   │   │   └── wgpu_types.rs
+    │   │   │   ├── path
+    │   │   │   │   ├── access.rs
+    │   │   │   │   ├── error.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── parse.rs
+    │   │   │   ├── serde
+    │   │   │   │   ├── de
+    │   │   │   │   │   ├── arrays.rs
+    │   │   │   │   │   ├── deserialize_with_registry.rs
+    │   │   │   │   │   ├── deserializer.rs
+    │   │   │   │   │   ├── enums.rs
+    │   │   │   │   │   ├── error_utils.rs
+    │   │   │   │   │   ├── helpers.rs
+    │   │   │   │   │   ├── lists.rs
+    │   │   │   │   │   ├── maps.rs
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   ├── options.rs
+    │   │   │   │   │   ├── processor.rs
+    │   │   │   │   │   ├── registration_utils.rs
+    │   │   │   │   │   ├── registrations.rs
+    │   │   │   │   │   ├── sets.rs
+    │   │   │   │   │   ├── struct_utils.rs
+    │   │   │   │   │   ├── structs.rs
+    │   │   │   │   │   ├── tuple_structs.rs
+    │   │   │   │   │   ├── tuple_utils.rs
+    │   │   │   │   │   └── tuples.rs
+    │   │   │   │   ├── ser
+    │   │   │   │   │   ├── arrays.rs
+    │   │   │   │   │   ├── custom_serialization.rs
+    │   │   │   │   │   ├── enums.rs
+    │   │   │   │   │   ├── error_utils.rs
+    │   │   │   │   │   ├── lists.rs
+    │   │   │   │   │   ├── maps.rs
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   ├── processor.rs
+    │   │   │   │   │   ├── serializable.rs
+    │   │   │   │   │   ├── serialize_with_registry.rs
+    │   │   │   │   │   ├── serializer.rs
+    │   │   │   │   │   ├── sets.rs
+    │   │   │   │   │   ├── structs.rs
+    │   │   │   │   │   ├── tuple_structs.rs
+    │   │   │   │   │   └── tuples.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── type_data.rs
+    │   │   │   ├── array.rs
+    │   │   │   ├── attributes.rs
+    │   │   │   ├── fields.rs
+    │   │   │   ├── from_reflect.rs
+    │   │   │   ├── generics.rs
+    │   │   │   ├── kind.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── list.rs
+    │   │   │   ├── map.rs
+    │   │   │   ├── reflect.rs
+    │   │   │   ├── reflectable.rs
+    │   │   │   ├── remote.rs
+    │   │   │   ├── set.rs
+    │   │   │   ├── std_traits.rs
+    │   │   │   ├── struct_trait.rs
+    │   │   │   ├── tuple.rs
+    │   │   │   ├── tuple_struct.rs
+    │   │   │   ├── type_info.rs
+    │   │   │   ├── type_info_stack.rs
+    │   │   │   ├── type_path.rs
+    │   │   │   ├── type_registry.rs
+    │   │   │   └── utility.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_remote
+    │   │   ├── src
+    │   │   │   ├── builtin_methods.rs
+    │   │   │   ├── http.rs
+    │   │   │   └── lib.rs
+    │   │   └── Cargo.toml
+    │   ├── bevy_render
+    │   │   ├── macros
+    │   │   │   ├── src
+    │   │   │   │   ├── as_bind_group.rs
+    │   │   │   │   ├── extract_component.rs
+    │   │   │   │   ├── extract_resource.rs
+    │   │   │   │   └── lib.rs
+    │   │   │   └── Cargo.toml
+    │   │   ├── src
+    │   │   │   ├── batching
+    │   │   │   │   ├── gpu_preprocessing.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── no_gpu_preprocessing.rs
+    │   │   │   ├── camera
+    │   │   │   │   ├── camera.rs
+    │   │   │   │   ├── camera_driver_node.rs
+    │   │   │   │   ├── clear_color.rs
+    │   │   │   │   ├── manual_texture_view.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── projection.rs
+    │   │   │   ├── diagnostic
+    │   │   │   │   ├── internal.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── mesh
+    │   │   │   │   ├── allocator.rs
+    │   │   │   │   ├── components.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── primitives
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── render_graph
+    │   │   │   │   ├── app.rs
+    │   │   │   │   ├── context.rs
+    │   │   │   │   ├── edge.rs
+    │   │   │   │   ├── graph.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── node.rs
+    │   │   │   │   └── node_slot.rs
+    │   │   │   ├── render_phase
+    │   │   │   │   ├── draw.rs
+    │   │   │   │   ├── draw_state.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── rangefinder.rs
+    │   │   │   ├── render_resource
+    │   │   │   │   ├── batched_uniform_buffer.rs
+    │   │   │   │   ├── bind_group.rs
+    │   │   │   │   ├── bind_group_entries.rs
+    │   │   │   │   ├── bind_group_layout.rs
+    │   │   │   │   ├── bind_group_layout_entries.rs
+    │   │   │   │   ├── buffer.rs
+    │   │   │   │   ├── buffer_vec.rs
+    │   │   │   │   ├── gpu_array_buffer.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── pipeline.rs
+    │   │   │   │   ├── pipeline_cache.rs
+    │   │   │   │   ├── pipeline_specializer.rs
+    │   │   │   │   ├── resource_macros.rs
+    │   │   │   │   ├── shader.rs
+    │   │   │   │   ├── storage_buffer.rs
+    │   │   │   │   ├── texture.rs
+    │   │   │   │   └── uniform_buffer.rs
+    │   │   │   ├── renderer
+    │   │   │   │   ├── graph_runner.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── render_device.rs
+    │   │   │   ├── texture
+    │   │   │   │   ├── fallback_image.rs
+    │   │   │   │   ├── gpu_image.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── texture_attachment.rs
+    │   │   │   │   └── texture_cache.rs
+    │   │   │   ├── view
+    │   │   │   │   ├── visibility
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   ├── range.rs
+    │   │   │   │   │   └── render_layers.rs
+    │   │   │   │   ├── window
+    │   │   │   │   │   ├── mod.rs
+    │   │   │   │   │   ├── screenshot.rs
+    │   │   │   │   │   └── screenshot.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── view.wgsl
+    │   │   │   ├── alpha.rs
+    │   │   │   ├── color_operations.wgsl
+    │   │   │   ├── extract_component.rs
+    │   │   │   ├── extract_instances.rs
+    │   │   │   ├── extract_param.rs
+    │   │   │   ├── extract_resource.rs
+    │   │   │   ├── globals.rs
+    │   │   │   ├── globals.wgsl
+    │   │   │   ├── gpu_component_array_buffer.rs
+    │   │   │   ├── gpu_readback.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── maths.wgsl
+    │   │   │   ├── pipelined_rendering.rs
+    │   │   │   ├── render_asset.rs
+    │   │   │   ├── settings.rs
+    │   │   │   ├── spatial_bundle.rs
+    │   │   │   ├── storage.rs
+    │   │   │   ├── sync_component.rs
+    │   │   │   └── sync_world.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_scene
+    │   │   ├── src
+    │   │   │   ├── bundle.rs
+    │   │   │   ├── components.rs
+    │   │   │   ├── dynamic_scene.rs
+    │   │   │   ├── dynamic_scene_builder.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── scene.rs
+    │   │   │   ├── scene_filter.rs
+    │   │   │   ├── scene_loader.rs
+    │   │   │   ├── scene_spawner.rs
+    │   │   │   └── serde.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_sprite
+    │   │   ├── src
+    │   │   │   ├── mesh2d
+    │   │   │   │   ├── color_material.rs
+    │   │   │   │   ├── color_material.wgsl
+    │   │   │   │   ├── material.rs
+    │   │   │   │   ├── mesh.rs
+    │   │   │   │   ├── mesh2d.wgsl
+    │   │   │   │   ├── mesh2d_bindings.wgsl
+    │   │   │   │   ├── mesh2d_functions.wgsl
+    │   │   │   │   ├── mesh2d_types.wgsl
+    │   │   │   │   ├── mesh2d_vertex_output.wgsl
+    │   │   │   │   ├── mesh2d_view_bindings.wgsl
+    │   │   │   │   ├── mesh2d_view_types.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── wireframe2d.rs
+    │   │   │   │   └── wireframe2d.wgsl
+    │   │   │   ├── render
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── sprite.wgsl
+    │   │   │   │   └── sprite_view_bindings.wgsl
+    │   │   │   ├── texture_slice
+    │   │   │   │   ├── border_rect.rs
+    │   │   │   │   ├── computed_slices.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── slicer.rs
+    │   │   │   ├── bundle.rs
+    │   │   │   ├── dynamic_texture_atlas_builder.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── picking_backend.rs
+    │   │   │   ├── sprite.rs
+    │   │   │   ├── texture_atlas.rs
+    │   │   │   └── texture_atlas_builder.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_state
+    │   │   ├── macros
+    │   │   │   ├── src
+    │   │   │   │   ├── lib.rs
+    │   │   │   │   └── states.rs
+    │   │   │   └── Cargo.toml
+    │   │   ├── src
+    │   │   │   ├── state
+    │   │   │   │   ├── computed_states.rs
+    │   │   │   │   ├── freely_mutable_state.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── resources.rs
+    │   │   │   │   ├── state_set.rs
+    │   │   │   │   ├── states.rs
+    │   │   │   │   ├── sub_states.rs
+    │   │   │   │   └── transitions.rs
+    │   │   │   ├── app.rs
+    │   │   │   ├── commands.rs
+    │   │   │   ├── condition.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── reflect.rs
+    │   │   │   ├── state_scoped.rs
+    │   │   │   └── state_scoped_events.rs
+    │   │   └── Cargo.toml
+    │   ├── bevy_tasks
+    │   │   ├── examples
+    │   │   │   ├── busy_behavior.rs
+    │   │   │   └── idle_behavior.rs
+    │   │   ├── src
+    │   │   │   ├── iter
+    │   │   │   │   ├── adapters.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── single_threaded_task_pool.rs
+    │   │   │   ├── slice.rs
+    │   │   │   ├── task.rs
+    │   │   │   ├── task_pool.rs
+    │   │   │   ├── thread_executor.rs
+    │   │   │   ├── usages.rs
+    │   │   │   └── wasm_task.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_text
+    │   │   ├── src
+    │   │   │   ├── bounds.rs
+    │   │   │   ├── error.rs
+    │   │   │   ├── FiraMono-subset.ttf
+    │   │   │   ├── font.rs
+    │   │   │   ├── font_atlas.rs
+    │   │   │   ├── font_atlas_set.rs
+    │   │   │   ├── font_loader.rs
+    │   │   │   ├── glyph.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── pipeline.rs
+    │   │   │   ├── text.rs
+    │   │   │   ├── text2d.rs
+    │   │   │   └── text_access.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_time
+    │   │   ├── src
+    │   │   │   ├── common_conditions.rs
+    │   │   │   ├── fixed.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── real.rs
+    │   │   │   ├── stopwatch.rs
+    │   │   │   ├── time.rs
+    │   │   │   ├── timer.rs
+    │   │   │   └── virt.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_transform
+    │   │   ├── src
+    │   │   │   ├── components
+    │   │   │   │   ├── global_transform.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── transform.rs
+    │   │   │   ├── bundles.rs
+    │   │   │   ├── commands.rs
+    │   │   │   ├── helper.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── plugins.rs
+    │   │   │   ├── systems.rs
+    │   │   │   └── traits.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_ui
+    │   │   ├── src
+    │   │   │   ├── experimental
+    │   │   │   │   ├── ghost_hierarchy.rs
+    │   │   │   │   └── mod.rs
+    │   │   │   ├── layout
+    │   │   │   │   ├── convert.rs
+    │   │   │   │   ├── debug.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── ui_surface.rs
+    │   │   │   ├── render
+    │   │   │   │   ├── box_shadow.rs
+    │   │   │   │   ├── box_shadow.wgsl
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   ├── pipeline.rs
+    │   │   │   │   ├── render_pass.rs
+    │   │   │   │   ├── ui.wgsl
+    │   │   │   │   ├── ui_material.wgsl
+    │   │   │   │   ├── ui_material_pipeline.rs
+    │   │   │   │   ├── ui_texture_slice.wgsl
+    │   │   │   │   ├── ui_texture_slice_pipeline.rs
+    │   │   │   │   └── ui_vertex_output.wgsl
+    │   │   │   ├── widget
+    │   │   │   │   ├── button.rs
+    │   │   │   │   ├── image.rs
+    │   │   │   │   ├── label.rs
+    │   │   │   │   ├── mod.rs
+    │   │   │   │   └── text.rs
+    │   │   │   ├── accessibility.rs
+    │   │   │   ├── focus.rs
+    │   │   │   ├── geometry.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── measurement.rs
+    │   │   │   ├── node_bundles.rs
+    │   │   │   ├── picking_backend.rs
+    │   │   │   ├── stack.rs
+    │   │   │   ├── ui_material.rs
+    │   │   │   ├── ui_node.rs
+    │   │   │   └── update.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_utils
+    │   │   ├── macros
+    │   │   │   ├── src
+    │   │   │   │   └── lib.rs
+    │   │   │   └── Cargo.toml
+    │   │   ├── src
+    │   │   │   ├── default.rs
+    │   │   │   ├── futures.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── object_safe.rs
+    │   │   │   ├── once.rs
+    │   │   │   ├── parallel_queue.rs
+    │   │   │   ├── synccell.rs
+    │   │   │   ├── syncunsafecell.rs
+    │   │   │   └── time.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   ├── bevy_window
+    │   │   ├── src
+    │   │   │   ├── event.rs
+    │   │   │   ├── lib.rs
+    │   │   │   ├── monitor.rs
+    │   │   │   ├── raw_handle.rs
+    │   │   │   ├── system.rs
+    │   │   │   ├── system_cursor.rs
+    │   │   │   └── window.rs
+    │   │   ├── Cargo.toml
+    │   │   └── README.md
+    │   └── bevy_winit
+    │       ├── src
+    │       │   ├── accessibility.rs
+    │       │   ├── converters.rs
+    │       │   ├── cursor.rs
+    │       │   ├── lib.rs
+    │       │   ├── state.rs
+    │       │   ├── system.rs
+    │       │   ├── winit_config.rs
+    │       │   ├── winit_monitors.rs
+    │       │   └── winit_windows.rs
+    │       ├── Cargo.toml
+    │       └── README.md
+    ├── docs
+    │   ├── cargo_features.md
+    │   ├── debugging.md
+    │   ├── linters.md
+    │   ├── linux_dependencies.md
+    │   └── profiling.md
+    ├── examples
+    │   └── game_breakout.rs
+    ├── src
+    │   └── main.rs
+    ├── best_practices.md
+    ├── Cargo.toml
+    ├── project_tree.txt
+    └── tree.py
