@@ -2,7 +2,12 @@ use bevy::prelude::*;
 use crate::components::{Player, Velocity};
 
 /// System to set up the game world, including camera, player, lighting, and ground
-pub fn setup(mut commands: Commands, mut meshes: ResMut<Assets<Mesh>>, mut materials: ResMut<Assets<StandardMaterial>>) {
+pub fn setup(
+    mut commands: Commands, 
+    mut meshes: ResMut<Assets<Mesh>>, 
+    mut materials: ResMut<Assets<StandardMaterial>>,
+    asset_server: Res<AssetServer>,
+) {
     // Spawn a 3D camera
     commands.spawn((
         Camera3d::default(),
@@ -36,13 +41,12 @@ pub fn setup(mut commands: Commands, mut meshes: ResMut<Assets<Mesh>>, mut mater
         Transform::from_xyz(0.0, 0.0, 0.0),
     ));
 
-    // Spawn the player as a blue cube
+    // Load the GLB model
+    let glb_handle = asset_server.load("models/Untitled.glb");
+    
+    // Spawn the player using the GLB model
     commands.spawn((
-        Mesh3d(meshes.add(Cuboid::new(1.0, 1.0, 1.0).mesh())),
-        MeshMaterial3d(materials.add(StandardMaterial {
-            base_color: Color::srgb(0.1, 0.4, 0.8),
-            ..default()
-        })),
+        SceneRoot(glb_handle),
         Transform::from_xyz(0.0, 0.5, 0.0),
         Player,
         Velocity::default(),
