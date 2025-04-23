@@ -29,6 +29,10 @@ def should_ignore(path, ignore_patterns):
     if basename.endswith('.log') or basename == 'logs' or basename == 'log':
         return True
     
+    # Specifically check for crates and assets root directories
+    if basename == 'crates' or basename == 'target':
+        return True
+    
     for pattern in ignore_patterns:
         # Tam eşleşme
         if pattern == basename:
@@ -123,7 +127,10 @@ def main():
     # Ekstra ignore desenleri ekle
     extra_patterns = [
         '.git', '.git/', '/git', '*.log', 'log', 'logs', 'log/', 'logs/',
-        'syserr', 'syslog', '*.log'
+        'syserr', 'syslog', '*.log', 
+        'data', 'data/', '/data', '/data/', 'docs', 'docs/', '/docs', '/docs/', 
+        'examples', 'examples/', '/examples', '/examples/',
+        'crates', 'crates/', '/crates', '/crates/'
     ]
     ignore_patterns.extend(extra_patterns)
     

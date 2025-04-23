@@ -17,5 +17,9 @@ fn main() {
             systems::movement,
             systems::camera_follow, // Camera follow system is now enabled
         ))
+        // Debug systems - uncomment as needed to troubleshoot model loading issues
+        // .add_systems(Update, systems::debug_model_loading) // Temporarily disabled
+        .add_systems(Update, systems::debug_player_position)
+        .add_systems(Update, systems::debug_scene_hierarchy)
         .run();
 }

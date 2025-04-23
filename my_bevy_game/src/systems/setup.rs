@@ -48,6 +48,7 @@ pub fn setup(
     commands.spawn((
         SceneRoot(glb_handle),
         Transform::from_xyz(0.0, 0.5, 0.0),
+        GlobalTransform::default(),
         Player,
         Velocity::default(),
     ));
